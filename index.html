@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to your new project home page. Built with modern HTML, CSS, and JavaScript.">
+  <title>Project Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-decorations" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="navbar" id="main-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" id="brand-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">Workspace</span>
+      </a>
+      <nav class="nav-links">
+        <button id="theme-toggle" class="btn-ghost" aria-label="Toggle theme">
+          <span class="theme-icon">✦</span>
+          <span class="theme-label">Ready</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content" id="main-content">
+    <div class="hero-container">
+      <div class="badge" id="status-badge">
+        <span class="status-indicator"></span>
+        <span>Blank Canvas Ready</span>
+      </div>
+
+      <h1 class="hero-title" id="page-heading">
+        Your Project <span class="gradient-text">Starts Here</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A clean, responsive, and modern foundation built with HTML5, Vanilla CSS, and JavaScript. Ready for your components and features.
+      </p>
+
+      <div class="action-buttons">
+        <button class="btn btn-primary" id="explore-btn">
+          <span>Get Started</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+        <button class="btn btn-secondary" id="action-btn">
+          <span>Documentation</span>
+        </button>
+      </div>
+
+      <div class="starter-cards" id="quick-status">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>HTML5 Semantic</h3>
+          <p>Well-structured, accessible markup with optimal SEO and viewport meta tags.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Modern CSS</h3>
+          <p>Custom properties, glassmorphism, responsive grid, and fluid typography.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Vanilla JavaScript</h3>
+          <p>Lightweight, reactive interactions without external dependencies.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="main-footer">
+    <div class="footer-container">
+      <p>&copy; <span id="current-year"></span> Project Starter. Ready for development.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
