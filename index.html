@@ -3,88 +3,908 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to your new project home page. Built with modern HTML, CSS, and JavaScript.">
-  <title>Project Home</title>
+  <meta name="description" content="CareerPath – Comprehensive Career Guidance for students who have completed 10th standard. Explore Intermediate (MPC, BiPC, MEC, CEC), Polytechnic Diploma, ITI, and Vocational pathways.">
+  <meta name="keywords" content="career after 10th, career guidance, MPC, BiPC, MEC, CEC, polytechnic diploma, ITI, career quiz after 10th">
+  <title>CareerPath – Discover Your Future | Career Guidance After 10th</title>
+  
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Ambient Atmospheric Background -->
   <div class="background-decorations" aria-hidden="true">
     <div class="glow-orb orb-1"></div>
     <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
     <div class="grid-overlay"></div>
   </div>
 
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Navigation Bar -->
   <header class="navbar" id="main-header">
     <div class="nav-container">
-      <a href="#" class="brand-logo" id="brand-logo">
-        <span class="logo-icon">✦</span>
-        <span class="logo-text">Workspace</span>
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="CareerPath Homepage">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <div class="brand-info">
+          <span class="logo-text">CareerPath</span>
+          <span class="logo-subtext">Discover Your Future</span>
+        </div>
       </a>
-      <nav class="nav-links">
-        <button id="theme-toggle" class="btn-ghost" aria-label="Toggle theme">
-          <span class="theme-icon">✦</span>
-          <span class="theme-label">Ready</span>
-        </button>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav id="primary-nav" class="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#pathways" class="nav-link">Career Pathways</a>
+        <a href="#quiz" class="nav-link">Career Quiz</a>
+        <a href="#resources" class="nav-link">Learning Resources</a>
+        <a href="#faq" class="nav-link">Guidance & FAQs</a>
+        <a href="#quiz" class="btn btn-sm btn-primary nav-cta">Take Quiz</a>
       </nav>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="main-content" id="main-content">
-    <div class="hero-container">
-      <div class="badge" id="status-badge">
-        <span class="status-indicator"></span>
-        <span>Blank Canvas Ready</span>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <div class="hero-container">
+        <div class="badge" id="status-badge">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span>Dedicated Guide for Class 10 Students & Parents</span>
+        </div>
+
+        <h1 class="hero-title" id="hero-heading">
+          Your Future <span class="gradient-text">Starts Here</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Completing 10th standard is your first major life milestone. Don't let confusion or peer pressure decide your journey. Explore structured pathways across <strong>Intermediate (MPC, BiPC, MEC, CEC)</strong>, <strong>Polytechnic Diplomas</strong>, <strong>ITI Trades</strong>, and <strong>Vocational Courses</strong> to build a career you love.
+        </p>
+
+        <div class="action-buttons">
+          <a href="#pathways" class="btn btn-primary" id="explore-btn">
+            <span>Explore Pathways</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#quiz" class="btn btn-secondary" id="quiz-btn">
+            <span>Take Career Quiz</span>
+            <span class="btn-badge">Interactive</span>
+          </a>
+        </div>
+
+        <!-- Snapshot Highlights -->
+        <div class="starter-cards" id="quick-status" aria-label="Quick Highlights">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎓</div>
+            <h3>Structured Streams</h3>
+            <p>Clear breakdowns of MPC, BiPC, MEC, CEC, Polytechnic, ITI, and specialized vocational trades.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧭</div>
+            <h3>Smart Self-Discovery Quiz</h3>
+            <p>Interactive assessment matching your school strengths and interests to realistic pathways.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🏛️</div>
+            <h3>Verified Official Portals</h3>
+            <p>Direct links to National Career Service (NCS), AICTE, DGT/ITI, Swayam, and video guides.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚖️</div>
+            <h3>Objective Insights</h3>
+            <p>Honest eligibility details, further degree scopes, and practical career prospects without hype.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- State & Institutional Advisory Notice -->
+    <section class="advisory-section" aria-label="Important Advisory Notice">
+      <div class="advisory-card">
+        <div class="advisory-icon" aria-hidden="true">📌</div>
+        <div class="advisory-content">
+          <h4>Important Regional & Institutional Disclaimer</h4>
+          <p>
+            Educational structures, course combinations, entrance exams (such as state POLYCETs, ITI counseling, or junior college admissions), and eligibility minimums <strong>vary significantly by state, education board (CBSE, ICSE, State Boards), and individual institutions</strong>. Always confirm specific requirements and admission notices on your local state education department or college portal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CAREER OPTIONS / PATHWAYS -->
+    <section class="section-container" id="pathways" aria-labelledby="pathways-heading">
+      <div class="section-header">
+        <span class="section-tag">Educational Roadmaps</span>
+        <h2 class="section-title" id="pathways-heading">Educational Pathways After 10th Standard</h2>
+        <p class="section-desc">
+          Compare the primary educational routes open to 10th pass students. Filter by category to examine subjects, eligibility, higher studies, and job opportunities.
+        </p>
       </div>
 
-      <h1 class="hero-title" id="page-heading">
-        Your Project <span class="gradient-text">Starts Here</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        A clean, responsive, and modern foundation built with HTML5, Vanilla CSS, and JavaScript. Ready for your components and features.
-      </p>
-
-      <div class="action-buttons">
-        <button class="btn btn-primary" id="explore-btn">
-          <span>Get Started</span>
-          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </button>
-        <button class="btn btn-secondary" id="action-btn">
-          <span>Documentation</span>
-        </button>
+      <!-- Pathway Filters -->
+      <div class="filter-controls" role="tablist" aria-label="Filter career pathways">
+        <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All Pathways</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="intermediate">Intermediate (10+2)</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="polytechnic">Polytechnic Diploma</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="iti">ITI Trades</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="vocational">Vocational & Skills</button>
       </div>
 
-      <div class="starter-cards" id="quick-status">
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>HTML5 Semantic</h3>
-          <p>Well-structured, accessible markup with optimal SEO and viewport meta tags.</p>
+      <!-- Pathways Grid -->
+      <div class="pathways-grid" id="pathways-grid">
+
+        <!-- 1. MPC -->
+        <article class="pathway-card" data-category="intermediate">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">📐</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Intermediate (10+2)</span>
+              <h3 class="pathway-title">MPC – Mathematics, Physics, Chemistry</h3>
+              <p class="pathway-duration">⏱️ Duration: 2 Years | Stream: Science & Technology</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              The premier stream for analytical minds who love mathematics, physical sciences, and technology innovation. MPC serves as the traditional launchpad for engineering, physical sciences, and technical armed forces.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard (SSC / CBSE / ICSE) with a solid foundation in Mathematics and Physical Sciences. Minimum percentages vary by institution.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>B.Tech / B.E.</strong> via JEE Main, JEE Advanced, BITSAT, State CETs</li>
+                <li><strong>B.Arch / B.Plan</strong> (Architecture via NATA / JEE Paper 2)</li>
+                <li><strong>NDA (National Defence Academy)</strong> – Army, Navy, Air Force officer training</li>
+                <li><strong>B.Sc. / BS-MS</strong> in Mathematics, Physics, Chemistry, Data Science, or Computer Science</li>
+                <li><strong>BCA</strong> (Bachelor of Computer Applications), Merchant Navy, Commercial Pilot Training</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Software Engineer, AI/ML Specialist, Civil/Mechanical Engineer, Aerospace Scientist, Defence Officer, Data Analyst, Research Scientist, Architect, Commercial Pilot.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Students with strong mathematical aptitude and problem-solving passion.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. BiPC -->
+        <article class="pathway-card" data-category="intermediate">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">🧬</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Intermediate (10+2)</span>
+              <h3 class="pathway-title">BiPC – Biology, Physics, Chemistry</h3>
+              <p class="pathway-duration">⏱️ Duration: 2 Years | Stream: Medical & Life Sciences</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              Dedicated to students who are fascinated by living organisms, human physiology, medicine, and healthcare sciences. Opens avenues into healthcare, agriculture, and biotechnology without requiring advanced calculus.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard with strong performance in General Science / Biology and Chemistry. Institution cut-offs apply.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>MBBS / BDS</strong> (via NEET-UG) for Medicine and Dentistry</li>
+                <li><strong>BAMS / BHMS / BUMS</strong> (Ayush Systems of Medicine)</li>
+                <li><strong>B.Pharm / Pharm.D</strong> (Pharmacy and Drug Formulation)</li>
+                <li><strong>B.Sc. Agriculture / Horticulture / Forestry</strong> (ICAR / State CETs)</li>
+                <li><strong>BVSc & AH</strong> (Veterinary Science and Animal Husbandry)</li>
+                <li><strong>B.Sc. Nursing, Physiotherapy (BPT), Radiology, Biotech & Genetics</strong></li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Doctor, Dental Surgeon, Pharmacist, Clinical Research Associate, Agricultural Officer, Veterinarian, Hospital Administrator, Bio-technologist, Physiotherapist.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Empathic, detail-oriented students fascinated by biological sciences and patient care.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. MEC -->
+        <article class="pathway-card" data-category="intermediate">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">📊</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Intermediate (10+2)</span>
+              <h3 class="pathway-title">MEC – Mathematics, Economics, Commerce</h3>
+              <p class="pathway-duration">⏱️ Duration: 2 Years | Stream: Finance & Business Analytics</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              The premier stream that bridges mathematical reasoning with commercial acumen and economic theories. MEC gives students a sharp quantitative advantage in elite corporate finance, chartered accountancy, and economics.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard. Sound grasp of arithmetic and numerical problem-solving is recommended.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>Chartered Accountancy (CA Foundation)</strong>, CMA, CS</li>
+                <li><strong>B.Com (Honours) / B.Com (Financial Analytics)</strong></li>
+                <li><strong>Actuarial Science</strong> (Risk evaluation and insurance mathematics)</li>
+                <li><strong>B.Sc. / B.A. Economics (Honours)</strong>, B.Sc. Statistics / Data Analytics</li>
+                <li><strong>BBA / IPMAT</strong> (5-Year Integrated Management at IIMs), BMS</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Chartered Accountant, Investment Banker, Financial Analyst, Actuary, Stock Market Strategist, Economic Consultant, Corporate Finance Manager.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Students who enjoy numbers and want to apply them in finance, business, and commerce.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. CEC -->
+        <article class="pathway-card" data-category="intermediate">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">💼</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Intermediate (10+2)</span>
+              <h3 class="pathway-title">CEC – Civics, Economics, Commerce</h3>
+              <p class="pathway-duration">⏱️ Duration: 2 Years | Stream: Commerce, Management & Law</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              Focused on trade, commercial operations, accounting principles, and legal/civic frameworks. It prepares students for versatile business degrees, law, corporate governance, and management without demanding higher mathematics.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard from any recognized board. Open to students interested in trade, politics, and management.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>B.Com (General, Computer Applications, Taxation)</strong></li>
+                <li><strong>BBA / BBM</strong> in Marketing, Human Resources, or International Business</li>
+                <li><strong>Integrated 5-Year Law (B.A. LLB / BBA LLB)</strong> via CLAT, AILET, or State Law CETs</li>
+                <li><strong>Company Secretary (CS)</strong>, CMA Foundation</li>
+                <li><strong>Hotel Management, Event Management, Digital Marketing degrees</strong></li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Corporate Lawyer, Marketing Executive, Human Resource Manager, Banking Specialist, Certified Tax Consultant, Retail Operations Head, Entrepreneur.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Students interested in business management, law, organizational operations, and public affairs.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. HEC / Arts -->
+        <article class="pathway-card" data-category="intermediate">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">🏛️</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Intermediate (10+2)</span>
+              <h3 class="pathway-title">HEC & Humanities – History, Economics, Civics</h3>
+              <p class="pathway-duration">⏱️ Duration: 2 Years | Stream: Arts & Social Sciences</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              Encompasses the study of human society, governance, history, literature, psychology, and public policies. Ideal for students with strong communication skills, curiosity about social issues, or civil service aspirations.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard. Curiosity in reading, critical writing, societal dynamics, and history.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>B.A. (Honours)</strong> in Political Science, History, Psychology, Sociology, English</li>
+                <li><strong>Journalism & Mass Communication (BJMC)</strong>, Media Studies</li>
+                <li><strong>B.A. LLB (Law)</strong> via CLAT, SLAT, LSAT India</li>
+                <li><strong>Design & Fine Arts (B.Des / BFA)</strong> via NIFT, NID, UCEED</li>
+                <li><strong>Social Work (BSW)</strong>, Public Policy, Civil Services Foundation</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Civil Servant (UPSC IAS, IPS, IFS, State PSCs), Investigative Journalist, Content Creator, Public Policy Analyst, Legal Advocate, Psychologist, UX Researcher, Graphic Designer.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Creative, analytical thinkers passionate about writing, society, governance, and media.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Polytechnic Diploma -->
+        <article class="pathway-card" data-category="polytechnic">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">⚙️</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Polytechnic Diploma</span>
+              <h3 class="pathway-title">Polytechnic Diploma in Engineering</h3>
+              <p class="pathway-duration">⏱️ Duration: 3 Years | Stream: Applied Technical Education</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              A 3-year practical, laboratory-heavy engineering course covering core branches such as Mechanical, Civil, Electrical, Electronics, Computer Engineering, and Automobile. Gives early hands-on industry exposure.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard with Mathematics and Science. In most states, admission is via an entrance exam (e.g., POLYCET, JEECUP, DET) followed by centralized counselling.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>Lateral Entry to 2nd Year B.Tech / B.E.</strong>: Directly join the 3rd semester of engineering degrees via state lateral entrance tests (e.g., ECET, JELET, LEET), saving one year.</li>
+                <li><strong>Advanced Post-Diploma specializations</strong> in CAD/CAM, Automation, Robotics, or Tool Design.</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Junior Engineer (JE) in Indian Railways, State Electricity Boards, PWD, Bharat Electronics; CAD Designer, Maintenance Supervisor, Quality Inspector, Technical Field Service Engineer.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Students wanting hands-on machine practice, early job-readiness, or a cost-effective route to B.Tech.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. ITI -->
+        <article class="pathway-card" data-category="iti">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">🔧</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">ITI Trades</span>
+              <h3 class="pathway-title">ITI – Industrial Training Institute Trades</h3>
+              <p class="pathway-duration">⏱️ Duration: 1 to 2 Years | Stream: Craftsmen Technical Training</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              Conducted under the Directorate General of Training (DGT / NCVT), ITI programs offer intensive vocational training in trades like Electrician, Fitter, Welder, Machinist, Motor Mechanic, and COPA (Computer Operator).
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard (some trades also accept 8th pass). Merit-based or state-level ITI admission portal.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>National Apprenticeship Certificate (NAC)</strong> via industrial apprenticeship programs</li>
+                <li><strong>Lateral Entry to 2nd Year Polytechnic Diploma</strong> in related engineering branches (available in select states)</li>
+                <li><strong>Crafts Instructor Training Scheme (CITS)</strong> to become an ITI Instructor</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Loco Pilot Assistant & Technician in Indian Railways, Public Sector Undertakings (BHEL, NTPC, ONGC, SAIL, ISRO), Certified Electrician, CNC Machine Operator, Industrial Fabricator, Self-Employed Contractor.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Students seeking early employment, practical workshop mastery, and guaranteed technical trade skills.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Vocational Courses -->
+        <article class="pathway-card" data-category="vocational">
+          <div class="pathway-header">
+            <div class="pathway-icon-box">🎨</div>
+            <div class="pathway-title-group">
+              <span class="pathway-category-badge">Vocational & Skills</span>
+              <h3 class="pathway-title">Vocational Diplomas & Skill Certifications</h3>
+              <p class="pathway-duration">⏱️ Duration: 6 Months to 2 Years | Stream: Applied Industry Skills</p>
+            </div>
+          </div>
+          <div class="pathway-body">
+            <p class="pathway-summary">
+              Tailored directly to immediate modern industry needs. Specializations include Paramedical Tech, Graphic Design, 2D/3D Animation, Culinary Arts, Hospitality, Fashion Styling, Digital Marketing, and Retail Logistics.
+            </p>
+            <div class="pathway-info-block">
+              <h4>📋 Eligibility Criteria</h4>
+              <p>Passed 10th Standard. Often requires basic aptitude in the chosen creative or technical discipline.</p>
+            </div>
+            <div class="pathway-info-block">
+              <h4>🎓 Possible Further Studies</h4>
+              <ul>
+                <li><strong>Bachelor of Vocation (B.Voc)</strong> degrees with multiple entry and exit points (NSQF aligned)</li>
+                <li><strong>Advanced Professional Certifications</strong> in UI/UX Design, Filmmaking, or Hotel Management</li>
+                <li>Direct transition to specialized freelance work or entrepreneurial ventures</li>
+              </ul>
+            </div>
+            <div class="pathway-info-block">
+              <h4>💼 Related Career Opportunities</h4>
+              <p>Medical Lab Technician, 3D Animator, Graphic Designer, Commercial Chef, Travel & Hospitality Associate, Digital Marketing Assistant, Fashion Stylist, Boutique Owner.</p>
+            </div>
+            <div class="pathway-footer-tip">
+              <span>💡 Ideal for: Creative or service-oriented students seeking specialized, immediate practical careers.</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: CAREER QUIZ -->
+    <section class="section-container quiz-section" id="quiz" aria-labelledby="quiz-heading">
+      <div class="section-header">
+        <span class="section-tag">Interactive Self-Assessment</span>
+        <h2 class="section-title" id="quiz-heading">10th Standard Career Discovery Quiz</h2>
+        <p class="section-desc">
+          Answer 6 simple questions about your favorite subjects, preferred activities, work styles, and goals to discover which educational pathways align with your personality.
+        </p>
+      </div>
+
+      <!-- Quiz Interactive Card Container -->
+      <div class="quiz-container" id="quiz-container">
+        
+        <!-- Progress Bar -->
+        <div class="quiz-progress-bar-container" aria-label="Quiz Progress">
+          <div class="quiz-progress-header">
+            <span id="quiz-step-text">Question 1 of 6</span>
+            <span id="quiz-percent-text">16% Completed</span>
+          </div>
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 16%;"></div>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">🎨</div>
-          <h3>Modern CSS</h3>
-          <p>Custom properties, glassmorphism, responsive grid, and fluid typography.</p>
+
+        <!-- Question View Container -->
+        <div class="quiz-card" id="quiz-question-card">
+          <div class="question-header">
+            <span class="question-badge" id="question-category">Interests & Academics</span>
+            <h3 class="question-title" id="question-text">Loading question...</h3>
+          </div>
+          
+          <div class="options-container" id="options-container" role="radiogroup" aria-label="Quiz Answer Options">
+            <!-- Dynamic Options Injected via JS -->
+          </div>
+
+          <div class="quiz-navigation">
+            <button class="btn btn-secondary" id="quiz-prev-btn" disabled>
+              <span>← Previous</span>
+            </button>
+            <button class="btn btn-primary" id="quiz-next-btn" disabled>
+              <span>Next Question →</span>
+            </button>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">🚀</div>
-          <h3>Vanilla JavaScript</h3>
-          <p>Lightweight, reactive interactions without external dependencies.</p>
+
+        <!-- Quiz Result Container (Initially Hidden) -->
+        <div class="quiz-result-card" id="quiz-result-card" style="display: none;" aria-live="polite">
+          <div class="result-header">
+            <div class="result-icon-celebration" aria-hidden="true">🎯</div>
+            <span class="badge">Your Personalized Assessment Result</span>
+            <h3 class="result-title" id="result-title">Top Recommended Pathway</h3>
+            <p class="result-subtitle" id="result-subtitle">Based on your interests and strengths</p>
+          </div>
+
+          <div class="result-highlight-box">
+            <div class="result-stream-header">
+              <div class="result-stream-icon" id="result-stream-icon">📐</div>
+              <div>
+                <h4 id="result-stream-name">Intermediate (MPC)</h4>
+                <p id="result-match-rate" class="result-match-rate">High Affinity Match</p>
+              </div>
+            </div>
+            <p class="result-explanation" id="result-explanation">
+              <!-- Personalized Explanation -->
+            </p>
+          </div>
+
+          <!-- Secondary Alternative -->
+          <div class="secondary-match-box" id="secondary-match-box">
+            <h4>🔄 Also Consider as a Close Alternative:</h4>
+            <p id="secondary-stream-text">Polytechnic Diploma in Engineering</p>
+          </div>
+
+          <!-- Suggested Next Steps -->
+          <div class="result-action-steps" id="result-action-steps">
+            <h4>📌 Recommended Next Steps for You:</h4>
+            <ul id="result-steps-list">
+              <li>Review the core subjects and syllabus of this stream.</li>
+              <li>Research state entrance exams or local college eligibility cutoff marks.</li>
+              <li>Discuss these findings with your parents and teachers.</li>
+            </ul>
+          </div>
+
+          <!-- Guidance / Non-scientific Disclaimer -->
+          <div class="quiz-disclaimer-box">
+            <span class="disclaimer-icon" aria-hidden="true">⚠️</span>
+            <p>
+              <strong>Important Guidance Disclaimer:</strong> This quiz is an exploratory self-assessment tool designed to help you reflect on your interests and potential directions. It does <em>not</em> claim to scientifically determine or lock your ideal career. We strongly encourage you to discuss these recommendations with your teachers, parents, and qualified school career counsellors before taking final admission decisions.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="result-buttons">
+            <button class="btn btn-secondary" id="quiz-retake-btn">
+              <span>↻ Retake Quiz</span>
+            </button>
+            <a href="#pathways" class="btn btn-primary" id="result-explore-btn">
+              <span>View Pathway Details</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: LEARNING RESOURCES -->
+    <section class="section-container" id="resources" aria-labelledby="resources-heading">
+      <div class="section-header">
+        <span class="section-tag">Guidance Hub</span>
+        <h2 class="section-title" id="resources-heading">Learning Resources & Official Portals</h2>
+        <p class="section-desc">
+          Access curated educational guidance videos and authentic official government education portals to make informed, verified decisions.
+        </p>
+      </div>
+
+      <!-- Resource Sub-Grid: Official Government Portals -->
+      <div class="resources-wrapper">
+        <h3 class="resource-group-title">🏛️ Official Government & Career Portals</h3>
+        <p class="resource-group-subtitle">Reliable national and state bodies for curriculum, entrance exams, and vocational training.</p>
+
+        <div class="resources-grid">
+          
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">National Portal</span>
+              <span class="resource-icon" aria-hidden="true">🌐</span>
+            </div>
+            <h4>National Career Service (NCS)</h4>
+            <p>An initiative by the Ministry of Labour & Employment offering career counseling, skill providers, and employment data for students across India.</p>
+            <div class="resource-meta">
+              <span>Domain: General & All Streams</span>
+            </div>
+            <a href="https://www.ncs.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit ncs.gov.in</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">Technical Education</span>
+              <span class="resource-icon" aria-hidden="true">⚙️</span>
+            </div>
+            <h4>AICTE – Technical Education Portal</h4>
+            <p>All India Council for Technical Education. Official guidelines, recognized polytechnic diploma institutions, and engineering curriculum information.</p>
+            <div class="resource-meta">
+              <span>Domain: Polytechnic & Engineering</span>
+            </div>
+            <a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit aicte-india.org</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">Vocational / Trades</span>
+              <span class="resource-icon" aria-hidden="true">🔧</span>
+            </div>
+            <h4>DGT – Directorate General of Training</h4>
+            <p>The apex government organization for vocational training and ITIs. Lists official trade syllabi, apprenticeship schemes, and NCVT certification details.</p>
+            <div class="resource-meta">
+              <span>Domain: ITI & Craft Training</span>
+            </div>
+            <a href="https://dgt.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit dgt.gov.in</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">Digital Learning</span>
+              <span class="resource-icon" aria-hidden="true">📚</span>
+            </div>
+            <h4>SWAYAM Government Learning Portal</h4>
+            <p>Free online courses developed by MHRD/AICTE/NCERT from class 9 through post-graduation to preview subjects before choosing streams.</p>
+            <div class="resource-meta">
+              <span>Domain: Free Subject Explorations</span>
+            </div>
+            <a href="https://swayam.gov.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit swayam.gov.in</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">Open Schooling</span>
+              <span class="resource-icon" aria-hidden="true">📖</span>
+            </div>
+            <h4>NIOS – National Open Schooling</h4>
+            <p>Flexible senior secondary education options, vocational courses, and self-paced certifications for students seeking alternative study tracks.</p>
+            <div class="resource-meta">
+              <span>Domain: Flexible & Distance Learning</span>
+            </div>
+            <a href="https://www.nios.ac.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit nios.ac.in</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top">
+              <span class="resource-tag portal-tag">Secondary Curriculum</span>
+              <span class="resource-icon" aria-hidden="true">🎓</span>
+            </div>
+            <h4>CBSE & State Boards Academic Hub</h4>
+            <p>Official subject curriculum frameworks, senior secondary combinations, and question banks to assess subject rigor before enrolling.</p>
+            <div class="resource-meta">
+              <span>Domain: Syllabus & Subject Outlines</span>
+            </div>
+            <a href="https://cbseacademic.nic.in" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit cbseacademic.nic.in</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
         </div>
       </div>
-    </div>
+
+      <!-- Resource Sub-Grid: Curated Video Guidance Links -->
+      <div class="resources-wrapper video-section-wrapper">
+        <h3 class="resource-group-title">🎥 Curated Video Guides by Pathway</h3>
+        <p class="resource-group-subtitle">Watch comprehensive visual walkthroughs explaining stream choices and career outlooks.</p>
+
+        <div class="video-cards-grid">
+          
+          <article class="video-card">
+            <div class="video-thumbnail-box">
+              <div class="video-play-icon" aria-hidden="true">▶</div>
+              <span class="video-duration">General Guide</span>
+            </div>
+            <div class="video-card-content">
+              <span class="video-badge">Comprehensive Overview</span>
+              <h4>How to Choose the Right Stream After 10th Standard</h4>
+              <p>A step-by-step framework to evaluate your personal aptitude, debunk societal myths, and avoid common peer pressure traps.</p>
+              <div class="video-card-footer">
+                <span class="video-pathway-tag">All Streams</span>
+                <a href="https://www.youtube.com/results?search_query=how+to+choose+stream+after+10th+career+guidance" target="_blank" rel="noopener noreferrer" class="video-btn-link">
+                  <span>Watch Video Guides</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail-box">
+              <div class="video-play-icon" aria-hidden="true">▶</div>
+              <span class="video-duration">Science Focus</span>
+            </div>
+            <div class="video-card-content">
+              <span class="video-badge">MPC vs BiPC</span>
+            </div>
+            <div class="video-card-content-bottom">
+              <h4>Science Pathways: Engineering (MPC) vs Medical (BiPC)</h4>
+              <p>Compare study intensity, daily subject demands, entrance tests (JEE vs NEET), and backup careers if you pursue Science.</p>
+              <div class="video-card-footer">
+                <span class="video-pathway-tag">Intermediate Science</span>
+                <a href="https://www.youtube.com/results?search_query=MPC+vs+BiPC+after+10th+career+options" target="_blank" rel="noopener noreferrer" class="video-btn-link">
+                  <span>Watch Video Guides</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail-box">
+              <div class="video-play-icon" aria-hidden="true">▶</div>
+              <span class="video-duration">Commerce Focus</span>
+            </div>
+            <div class="video-card-content">
+              <span class="video-badge">MEC vs CEC</span>
+            </div>
+            <div class="video-card-content-bottom">
+              <h4>Commerce & Business Streams: MEC vs CEC Decoded</h4>
+              <p>Learn whether taking Mathematics with Commerce is essential for you, with insights on CA, Corporate Law, and Banking.</p>
+              <div class="video-card-footer">
+                <span class="video-pathway-tag">Intermediate Commerce</span>
+                <a href="https://www.youtube.com/results?search_query=MEC+vs+CEC+after+10th+scope" target="_blank" rel="noopener noreferrer" class="video-btn-link">
+                  <span>Watch Video Guides</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-thumbnail-box">
+              <div class="video-play-icon" aria-hidden="true">▶</div>
+              <span class="video-duration">Technical Focus</span>
+            </div>
+            <div class="video-card-content">
+              <span class="video-badge">Polytechnic & ITI</span>
+            </div>
+            <div class="video-card-content-bottom">
+              <h4>Polytechnic Diploma vs ITI: Direct Jobs & Lateral Entry</h4>
+              <p>Everything you need to know about hands-on technical diplomas, entering B.Tech 2nd year directly, and railway technician jobs.</p>
+              <div class="video-card-footer">
+                <span class="video-pathway-tag">Polytechnic / ITI</span>
+                <a href="https://www.youtube.com/results?search_query=Polytechnic+vs+ITI+after+10th+scope" target="_blank" rel="noopener noreferrer" class="video-btn-link">
+                  <span>Watch Video Guides</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GUIDANCE & FAQS -->
+    <section class="section-container" id="faq" aria-labelledby="faq-heading">
+      <div class="section-header">
+        <span class="section-tag">Clear Doubts</span>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions for 10th Graders</h2>
+        <p class="section-desc">
+          Get straightforward answers to the most common dilemmas students face when deciding what to do after 10th standard.
+        </p>
+      </div>
+
+      <div class="faq-accordion" id="faq-accordion">
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I change my stream later if I realize it is not right for me?</span>
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Generally, students who complete 10+2 in the <strong>Science stream</strong> have greater flexibility to transition to Commerce or Humanities degrees at the undergraduate level (such as B.Com, BBA, BA, or Law). However, switching into Science degrees (like B.Tech or MBBS) after completing 10+2 in Commerce or Arts is typically not permitted because of fundamental prerequisite coursework in Physics, Chemistry, and Mathematics/Biology. For Polytechnic Diploma students, lateral entry to 2nd year B.Tech is widely available in their respective technical domain.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>My 10th standard marks were average. Can I still choose Science or Polytechnic?</span>
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! 10th class marks are only a reflection of one exam and do not permanently determine your intellectual capability. If you have genuine interest, curiosity, and willingness to practice consistently in Mathematics and Science, you can excel in Science or Polytechnic. However, if you found Mathematics or Science deeply uninteresting or stressful in 10th, pursuing Commerce (MEC/CEC), Arts (HEC), or specialized vocational courses might offer a happier and more fulfilling environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is the real difference between Intermediate (10+2) and a 3-Year Polytechnic Diploma?</span>
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              <strong>Intermediate (10+2)</strong> focuses on strong theoretical foundations in science, commerce, or arts, preparing you for competitive degree entrance exams (JEE, NEET, CLAT, CA Foundation). <strong>Polytechnic Diplomas</strong> are applied, practical, 3-year technical courses designed to create job-ready technicians or provide direct lateral entry into the 2nd year of an engineering degree (B.Tech). If you prefer hands-on lab work and want early industry skills, Polytechnic is an excellent choice.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I choose between MEC and CEC in Commerce?</span>
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The difference comes down to <strong>Mathematics</strong> versus <strong>Civics/Political Science</strong>. If you are comfortable with higher mathematics (algebra, calculus, statistics) and aim for high-paying analytical fields like Actuarial Science, Chartered Accountancy (CA), or Quantitative Finance, choose <strong>MEC</strong>. If you dislike complex math and prefer management, corporate law, business operations, and civil services, choose <strong>CEC</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I handle parental or family pressure to take a stream I don't like?</span>
+            <span class="faq-chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Parents usually recommend streams like Engineering or Medicine out of genuine care for your financial stability. The best way to discuss your preference is with prepared facts:
+              <br>1. Show them structured roadmaps of your chosen pathway (e.g., career scopes in Commerce, Law, Design, or Technical Diplomas).
+              <br>2. Explain calmly which subjects genuinely engage you and where you feel confident performing well.
+              <br>3. Request an appointment with an experienced school teacher or professional career counsellor who can mediate objectively.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
+  <!-- Footer Section -->
   <footer class="footer" id="main-footer">
     <div class="footer-container">
-      <p>&copy; <span id="current-year"></span> Project Starter. Ready for development.</p>
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo">
+          <span class="logo-icon" aria-hidden="true">✦</span>
+          <span class="logo-text">CareerPath</span>
+        </div>
+        <p class="footer-tagline">
+          Empowering 10th standard students to discover clear, authentic, and fulfilling career pathways.
+        </p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Explore Pathways</h4>
+          <ul>
+            <li><a href="#pathways">Intermediate MPC & BiPC</a></li>
+            <li><a href="#pathways">Commerce: MEC & CEC</a></li>
+            <li><a href="#pathways">Polytechnic Diplomas</a></li>
+            <li><a href="#pathways">ITI Trades & Vocational</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tools & Resources</h4>
+          <ul>
+            <li><a href="#quiz">Interactive Career Quiz</a></li>
+            <li><a href="#resources">Official Government Portals</a></li>
+            <li><a href="#resources">Curated Video Guides</a></li>
+            <li><a href="#faq">Student FAQs & Advice</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Websites</h4>
+          <ul>
+            <li><a href="https://www.ncs.gov.in" target="_blank" rel="noopener noreferrer">National Career Service</a></li>
+            <li><a href="https://www.aicte-india.org" target="_blank" rel="noopener noreferrer">AICTE India</a></li>
+            <li><a href="https://dgt.gov.in" target="_blank" rel="noopener noreferrer">DGT / ITI Portal</a></li>
+            <li><a href="https://swayam.gov.in" target="_blank" rel="noopener noreferrer">Swayam Learning</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>
+            <strong>Disclaimer:</strong> CareerPath provides informational guidance for general awareness. Academic admission requirements, eligibility cutoffs, seat allocations, and entrance examinations vary by state, board, and educational institution. Please verify specific policies with respective educational boards and accredited colleges.
+          </p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; <span id="current-year"></span> CareerPath – Discover Your Future. All rights reserved.</p>
+          <button id="share-btn" class="btn-ghost btn-sm" aria-label="Share CareerPath">
+            <span>🔗 Share CareerPath</span>
+          </button>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Vanilla JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
